@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Avishek</title>
+ 
+<link rel="shortcut icon" class="iconlogo" type="image/jpg" href="favicon.ico"/>
+    <!--box icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <!--custom css-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+
+    <!--header-->
+    <header class="header" id="header">
+        <a href="#" class="logo">Avishek</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Trainings</a>
+            <a href="#project">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experiences</a>
+            <a href="#Contact">Contact</a>
+        </nav>
+
+        <div class="toggle-container">
+          <label class="switch">
+              <input type="checkbox" id="theme-toggle">
+              <span class="slider round"></span>
+          </label>
+      </div>
+    </header>
+
+    <script>
+      const themeToggle = document.getElementById("theme-toggle");
+const body = document.body;
+
+themeToggle.addEventListener("change", () => {
+    if (themeToggle.checked) {
+        body.classList.add("dark");
+    } else {
+        body.classList.remove("dark");
+    }
+});
+
+// Check the user's preferred theme and set it if available
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    themeToggle.checked = true;
+    body.classList.add("dark");
+}
+
+    </script>
+
+
+
+
+
+
+
+
+    <!--home section --> 
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3><span class="hello">Hello,</span>     It's Me <span class="wave">👋</span></h3>
+                <h1>Avishek Bhunia <i class='bx bxs-smile' id="smile" ></i></h1>
+            <h3>And I'm a <span>Frontend Developer ...</span><i class='bx bxs-plane-alt' style='color:#ffffff' ></i></h3>
+            <p>I am a highly skilled frontend developer with a passion for creating user-friendly and visually appealing web interfaces. 
+              My expertise in HTML, CSS, and JavaScript allows me to bring designs to life while optimizing performance and ensuring a seamless user experience. 
+              I am dedicated to staying updated on the latest web development trends and technologies to deliver top-notch results.</p>
+          <div class="social-media">
+             <a href="https://github.com/Avishekjgec" target="_blank"><i class='bx bxl-github'  ></i></a>
+             <a href="https://twitter.com/1AvishekBhunia" target="_blank"><i class='bx bxl-twitter'  ></i></a>
+             <a href="https://www.instagram.com/_alpha_geek/" target="_blank"><i class='bx bxl-instagram-alt'   ></i></a>
+             <a href="https://www.linkedin.com/in/avishekbhunia/" target="_blank"><i class='bx bxl-linkedin'   ></i></a>
+          </div>  
+          <a href="#about" class="btn">Read More<i class='bx bx-chevrons-right bx-fade-right'   ></i></a>
+        </div>
+        <div class="home-img">
+            <img src="img.port.jpg" alt="" height="400px">
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <!--About Section-->
+    <section class="about" id="about">
+        
+        <div class="about-img">
+            <img src=" photo_2023-10-16_14-24-19.jpg" alt="avi" height="400px" width="400px">
+            <h3 class="alphaaa"> <span><</span> Alpha 🚀 Geek <span>/></span></h3>
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>💡Aspiring Electrical Engineer💡</h3>
+            
+             <p>I am an enthusiastic fresher with highly motivated having bachelors of technology degree in Electrical Engineering from Jalpaiguri Govt. Engg. College. My aim is to learn new technologies and to start up my career by utilizing my skills and abilities as well as being resourceful,innovative and flexible while working in a challenging position , where I will be able to apply my experiences in projects. </p>
+        
+       
+        <a href="https://drive.google.com/file/d/1XZkbFmEBsCPxWsuW0N3kesZt6AC9R6Om/view?usp=sharing" target="_blank" class="btn">Resume <i class='bx bxs-cloud-download' style='color:#000000' ></i></a>
+    </div>
+    </section>
+
+
+
+
+
+
+
+
+     <!--Professional Training section-->
+    <section class="services" id="services">
+        <h2 class="heading">Professional <span>Training</span></h2>
+        <div class="services-container">
+            <div class="services-box">
+                <img src="mechatronics-icon-monochrome-simple-sign-from-vector-47293595.webp" alt="">
+                <h3><span class="trainingabc">Basic Mechatronics Traning</span></h3>
+                <p>It has been my pleasure to learn  ladder logic, function block diagrams, pneumatic control system programming &logic gates via TIA V14 porta. Pneumatic control systems are included in addition to electromechanical components and PLC programming using ladder logic and function block diagrams.</p>
+                <a href="https://drive.google.com/file/d/1jNuffPf0kIBCyUHeFCa9fVKquC5X0vD9/view?usp=sharing" target="_blank" class="btn" id="certificate">Certificate.. <i class='bx bx-expand-vertical bx-burst'   ></i>  </a>
+
+            </div>
+            <div class="services-box">
+                <img src="images.jpg" alt="">
+                <h3><span class="trainingabc">Basic Electrical & Mechanical Training</span></h3>
+                 
+                <p> 
+                I have learnt about Basics of electricals and general components, Motors & Drives, basic electronics, and use of
+                  different types of measuring instruments.
+                 Also learnt about Mechanical measuring instruments, Hand tools, different kinds of machining & practice on
+                  machines, Welding, Hydraulics & Pneumatics.
+                   </p>
+              
+                <a href="https://drive.google.com/file/d/1OZLzt-uy3YC1JMurrxEM81DhYHjz4mtc/view" target="_blank" class="btn" id="certificate"> Certificate..<i class='bx bx-expand-vertical bx-burst'   ></i> </a>
+                
+            </div>
+        </div>
+    </section>
+  
+
+
+
+
+
+
+
+
+
+    <!--project section design-->
+    <section class="project" id="project">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+        <div class="project-container">
+            <div class="project-box">
+                <img src="download.jpg" alt="">
+                <div class="project-layer">
+                    <h3>Shoe Store</h3>
+                    <h2>It's a Frontend part of a Shoe Store.</h2>
+                    <h2><span>Tech Stack :-</span> HTML,CSS,JavaScript.</h2>
+                    <a href="https://github.com/Avishekjgec"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+            <div class="project-box">
+                <img src="download (1).jpg" alt=""   >
+                <div class="project-layer">
+                    <h3>Smart Street Light</h3>
+                    <h2>It's totally Hardware Based Project.</h2>
+                    <h2><span>Tech Stack :-</span> IOT,Arduino,Sensors.</h2>
+                    <a href="https://github.com/Avishekjgec"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+            <div class="project-box">
+                <img src="download (2).jpg" alt=""  >
+                <div class="project-layer">
+                    <h3>Home Automation</h3>
+                    <h2>IOT Based projects.</h2>
+                    <h2><span>Tech Stack:-</span>Arduino,Embedded System,Picsim Lab,Sensors.</h2>
+                    <a href="https://docs.google.com/document/d/1QgtJZp8ROn7_olMnhMYxeMPkIAngimvH/edit?usp=sharing&ouid=100489710330926713204&rtpof=true&sd=true"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--skillsection-->
+     
+<section class="skill-sec" id="skills">
+   
+    <h2 class="heading">My <span>Skills</span></h2>
+
+
+    <div class="skill-content">
+      <div class="skill-content-content">
+        <div class="skill-content-img">
+          <img src="html-5--v1.webp">
+        </div>
+        
+        <h3>HTML</h3>
+          
+ 
+          
+        </div>
+      </div>
+    
+    <div class="skill-content">
+      <div class="skill-content-content">
+        <div class="skill-content-img">
+          <img src="css3.webp">
+        </div>
+         <h3>CSS</h3>
+        </div>
+      </div>
+     
+    <div class="skill-content">
+      <div class="skill-content-content">
+        <div class="skill-content-img">
+          <img src="javascript--v1.webp">
+        </div>
+        
+        <h3>JavaScript</h3>
+      </div>
+    </div>
+
+    <div class="skill-content">
+      <div class="skill-content-content">
+        <div class="skill-content-img">
+          <img src="download-removebg-preview (1).png">
+        </div>
+        
+        <h3>PLC</h3>
+      </div>
+    </div>
+    <div class="skill-content">
+      <div class="skill-content-content">
+        <div class="skill-content-img">
+          <img src="python.webp">
+        </div>
+        
+        <h3>Python</h3>
+      </div>
+    </div>
+    <div class="skill-content">
+      <div class="skill-content-content">
+        <div class="skill-content-img">
+          <img src="visual-studio-code-2019.webp">
+        </div>
+        
+        <h3>VS Code</h3>
+      </div>
+    </div>
+    <div class="skill-content">
+      <div class="skill-content-content">
+        <div class="skill-content-img">
+          <img src="microsoft-excel-2019--v1.webp">
+        </div>
+        
+        <h3>Excel</h3>
+      </div>
+    </div>
+    <div class="skill-content">
+      <div class="skill-content-content">
+        <div class="skill-content-img">
+          <img src="c_image-removebg-preview.png">
+        </div>
+        
+        <H3>C Language</H3>
+      </div>
+    </div>
+    <div class="skill-content">
+      <div class="skill-content-content">
+        <div class="skill-content-img">
+          <img src="c++_img-removebg-preview.png">
+        </div>
+        
+        <h3>C++ Language</h3>
+      </div>
+    </div>
+    <div class="skill-content">
+      <div class="skill-content-content">
+        <div class="skill-content-img">
+          <img src="download__3_-removebg-preview.png">
+        </div>
+        
+        <h3>Arduino</h3>
+          
+ 
+          
+        </div>
+      </div>
+      <div class="skill-content">
+        <div class="skill-content-content">
+          <div class="skill-content-img">
+            <img src="solid_edge-removebg-preview.png">
+          </div>
+          
+          <h3>Solid Edge</h3>
+            
+   
+            
+          </div>
+        </div>
+        <div class="skill-content">
+          <div class="skill-content-content">
+            <div class="skill-content-img">
+              <img src="problem-solving-icon-vector-46348741.webp">
+            </div>
+            
+            <h3>Problem Solving</h3>
+              
+     
+              
+            </div>
+          </div>
+  
+</section>
+
+
+
+
+
+
+
+
+
+
+    <!--Education & Experience-->
+    <section class="experience" id="experience">
+        <h2 class="heading">My <span>Experiences</span></h2>
+
+        
+
+
+
+        <div class="exp-container">
+            <div class="exp">
+                <label class="exp-heading" id="exp-heading" for="education">Education</label>
+                <input type="radio" id="education" name="exp"checked>
+               
+
+
+                <div class="content">
+                    
+                       
+                        
+                        <div class="experience-list">
+                          <div class="experience-content">
+                            <h2>Jalpaiguri Govt. Engineering College </h2>
+                            <h3>2021-20025</h3>
+                            <p>B.Tech in Electrical Engineering. <br> <span>Average CGPA  :</span> 8.33.</p>
+                          </div>
+                        </div>
+                        <div class="experience-list">
+                          <div class="experience-content">
+                            <h2>Chandrakona Jirat High School</h2>
+                            <h3>2018-2020</h3>
+                            <p>Higher Secondary. <br> <span>Percentage : </span>97%</p>
+                          </div>
+                        </div>
+                         
+                        
+                      
+                     </div>
+                    </div>
+
+
+         <div class="exp">
+                <label class="exp-heading"  id="exp-heading"  for="experience">Experience</label>
+                <input type="radio" id="experience" name="exp">
+               
+
+                <div class="content">
+                    
+                    <div class="experience-list">
+                      <div class="experience-content">
+                        <h2>Siemens Ltd.</h2>
+                        <h3>2021-Current</h3>
+                        <p>I am a <span>Scholar</span> at Siemens. I have done <span>Basics of Electrical & Mechanical Training</span> and also done <span>Mechatronics Training.</span></p>
+                      </div>
+                    </div>
+                    <div class="experience-list">
+                      <div class="experience-content">
+                        <h2>Emertxe Information Technologies</h2>
+                        <h3>Nov,2022-Jan,2023</h3>
+                        <p><span>IOT Intern.</span></p>
+                      </div>
+                    </div>
+                    <div class="experience-list">
+                      <div class="experience-content">
+                        <h2>Growth Centre (I) Pvt. Ltd</h2>
+                        <h3>2021-current</h3>
+                        <p><span>Soft Skill</span> Training.</p>
+                      </div>
+                    </div>
+                     
+                  </div>
+                </div>
+              
+
+
+
+
+            </div>
+        </div>
+         
+    </section>
+
+
+
+
+
+
+    <!--Skill-->
+    <!--<section >
+    <div class="skills-row">
+        <div class="skill-icon"><i class="fab fa-html5"></i> HTML</div>
+        <div class="skill-icon"><i class="fab fa-css3"></i> CSS</div>
+        <div class="skill-icon"><i class="fab fa-js"></i> JavaScript</div>
+        <div class="skill-icon"><i class="fab fa-plc"></i> PLC</div>
+        <div class="skill-icon"><i class="fab fa-scaada"></i> SCADA</div>
+    </div>
+    <div class="skills-row">
+        <div class="skill-icon"><i class="fab fa-matlab"></i> MATLAB</div>
+        <div class="skill-icon"><i class="fab fa-c"></i> C</div>
+        <div class="skill-icon"><i class="fab fa-cuttlefish"></i> C++</div>
+        <div class="skill-icon"><i class="fas fa-file-excel"></i> Excel</div>
+        <div class="skill-icon"><i class="fas fa-solid"></i> Solid Edge</div>
+    </div>
+ 
+
+    </section>-->
+
+
+
+
+
+
+
+
+    <!--Contact-->
+    <section class="Contact" id="Contact">
+        <h2 class="heading">Contact <span> Me!</span></h2>
+        <div class="contact-details">
+        <div class="contact-img">
+            <img src="contact.png" alt="" height="300px">
+        </div>
+        <div class="contact-content">
+        
+        
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Nmae*">
+                <input type="email" placeholder="Email Address*">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number*">
+                <input type="text" placeholder="Email Subject*">
+            </div>
+            <textarea name="" id="" cols="50" rows="10" placeholder="Your Message*"></textarea>
+            <input type="submit" value="Say Hello 👋🏿" class="btn">
+        
+        </form>
+    </div>
+</div>
+    <div class="ptr">
+    <div class="width-33">
+        <h2>
+            <i class='bx bx-home-heart' style="color: rgb(236, 189, 112);"></i>
+        </h2>
+        <h4>Address</h4>
+        <p>Chandrakona,Paschim Medinipur,</p>
+        <p>West Bengal,India,721201</p>
+      </div>
+     
+      <div class="width-33">
+        <h2>
+            <i class='bx bxs-phone-call' style="color:rgb(236, 189, 112);"  ></i>
+        </h2>
+        <h4>Phone</h4>
+        <p>+91 6294272678</p>
+      </div>
+      <div class="width-33">
+        <h2>
+            <i class='bx bxl-gmail' style="color: rgb(236, 189, 112);"   ></i> 
+        </h2>
+        <h4>Email</h4>
+        <p>brown.eye.avi@gmail.com</p>
+        <p>ab2519@ee.jgec.ac.in</p>
+        
+      </div>
+    </div>
+     
+     
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!--footer-->
+    <div class="footer" id="footer">
+        <div class="footer-text">
+            <p>Made with ❤️ by <span>@Avishek</span> |                                   All Rights Reserved.</p>
+            <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+        </div>
+    </div>
+
+
+     
+
+
+
+
+
+
+
+
+    
+
+    
+</body>
+ 
+ 
+    
+
+ 
