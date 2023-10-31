@@ -59,7 +59,7 @@ body{
     color: var(--text-color);
 }
 section{
-    min-height: 100vh;
+     
     padding: 0rem 5rem 5rem 10rem;
     top: 0;
     bottom: 0;
@@ -1017,6 +1017,7 @@ textarea {
 	float: left;
 	margin-right: 1%;
 	margin-top: 50px;
+	margin-bottom:60px;
     gap: 5.5rem;
 }
 
